@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-paper.min.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12" id="main_content" contenteditable="true">
+
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+	<script src="ckeditor/ckeditor.js"></script>
+
+	<script type="text/javascript">
+	CKEDITOR.disableAutoInline = true;
+	CKEDITOR.inline('main_content');
+	CKEDITOR.config.extraPlugins = "bootstrap,tokens";
+/*		$(document).ready(function(){
+			
+			//CKEDITOR.config.extraPlugins = "bootstrap";
+		});*/
+	</script>
+
+</body>
+</html>
